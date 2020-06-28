@@ -19,6 +19,42 @@
 <!-- ----------------------------------------------------------------- -->
 
 
+  <style>
+    .large-box{
+      width: 400px;
+      height:400px;
+      background-color: white;
+      border-color: purple;
+      border-style: groove;
+      left: 500px;
+      top: 100px;
+      position: relative;
+    }
+
+    .small-box{
+      width: 50px;
+      height: 50px;
+      background-color: aquamarine;
+      position: absolute;
+      top: 90px;
+      left: 490px;
+      animation-name: move;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes move {
+      0% {transform: translate(0);}
+      25% {transform: translateX(390px);}
+      50% {transform: translate(390px, 390px);}
+      75% {transform: translateY(390px);}
+      100% {transform: translate(-130,-130);}
+
+    }
+
+
+  </style>
 
 
 
@@ -33,10 +69,16 @@
 <!-- ---------------------------------------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------- -->
 <body> <!-- body begins here -->
-  The quickest of brown foxes
+  
+  <div class= "large-box">
 
+    
 
+  </div>
 
+  
+
+<div class="small-box"></div>
 
   <!-- ====================================================== -->
   <!-- ====================================================== -->
